@@ -1,0 +1,14 @@
+# Ambientes Virtuais;
+venv/
+env/
+
+# Configurações sensíveis (Senhas);
+.env
+
+# Arquivos temporários do Python e Jupyter;
+__pycache__/
+.ipynb_checkpoints/
+
+# Arquivos do sistema;
+Thumbs.db
+.DS_Store
