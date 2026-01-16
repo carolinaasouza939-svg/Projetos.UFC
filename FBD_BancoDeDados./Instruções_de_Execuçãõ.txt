@@ -11,19 +11,19 @@ Abra o terminal na pasta do projeto e execute os comandos abaixo.
 
 No Windows:
 
-python -m venv venv
-venv\Scripts\activate
+Comando1: python -m venv venv
+Comando2: venv\Scripts\activate
 
 No Linux, macOS ou WSL:
 
-python3 -m venv venv
-source venv/bin/activate
+Comando1: python3 -m venv venv
+Comando2: source venv/bin/activate
 
 
 2. Instalação das Dependências
 Com o ambiente virtual ativo, instale todas as bibliotecas necessárias:
 
-pip install -r requirements.txt
+Comando: pip install -r requirements.txt
 
 
 3. Configuração do Banco de Dados
@@ -57,15 +57,15 @@ Após configurar o banco e a venv, execute o comando para abrir a interface:
 
 * No terminal, certifique-se de estar na pasta do projeto.
 
-cd "Caminho\da\Pasta"
+Comando: cd "Caminho\da\Pasta"
 
 * Verifique se a venv está ativa (se estiver aparecendo o nome venv no terminal) caso contrário:
 
-venv\Scripts\activate
+Comando: venv\Scripts\activate
 
 * Rode o comando.
 
-panel serve Medico.ipynb --show
+Comando: panel serve Medico.ipynb --show
 
 Nota: O CRUD será executado e a Interface Gráfica interativa será aberta automaticamente no seu navegador padrão através do servidor local do Panel.
 
