@@ -59,7 +59,7 @@ Após configurar o banco e a venv, execute o comando para abrir a interface:
 
 cd "Caminho\da\Pasta"
 
-* Verifique se a venv está ativa (se entiver aparecendo o nome venv no terminal) caso contrário:
+* Verifique se a venv está ativa (se estiver aparecendo o nome venv no terminal) caso contrário:
 
 venv\Scripts\activate
 
