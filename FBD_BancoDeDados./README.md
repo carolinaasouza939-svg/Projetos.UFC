@@ -1,0 +1,71 @@
+__Instruções de Configuração e Execução__
+
+Aplicativos Utilizados
+PostgreSQL (pgAdmin4): Para execução do script SQL e gerenciamento do banco de dados.
+VS Code com extensão Jupyter: Para desenvolvimento e execução do notebook Medico.ipynb.
+Python 3.13.7: Versão utilizada para garantir compatibilidade com as bibliotecas.
+
+
+1. Preparação do Ambiente Virtual
+Abra o terminal na pasta do projeto e execute os comandos abaixo.
+
+No Windows:
+
+python -m venv venv
+venv\Scripts\activate
+
+No Linux, macOS ou WSL:
+
+python3 -m venv venv
+source venv/bin/activate
+
+
+2. Instalação das Dependências
+Com o ambiente virtual ativo, instale todas as bibliotecas necessárias:
+
+pip install -r requirements.txt
+
+
+3. Configuração do Banco de Dados
+Abra o seu gerenciador de banco de dados (Ex: pgAdmin4).
+
+* Crie um novo Database.
+* Execute o arquivo script_banco.sql disponível no repositório para criar as tabelas e restrições de integridade.
+
+
+4. Configuração das Variáveis de Ambiente (.env)
+Para proteger suas credenciais, o repositório contém um arquivo de exemplo.
+
+* Localize o arquivo .env_example.
+* Renomeie-o para .env.
+
+Preencha com as informações do seu banco de dados local:
+
+* Trecho de código:
+
+DB_HOST=localhost
+DB_NAME=Nome_do_Seu_Database
+DB_USER=postgres
+DB_PASS=Sua_Senha_Aqui
+DB_PORT=5432
+
+Nota: O arquivo .env é ignorado pelo Git (via .gitignore) para proteger seus dados.
+
+
+5. Execução da Aplicação
+Após configurar o banco e a venv, execute o comando para abrir a interface:
+
+* No terminal, certifique-se de estar na pasta do projeto.
+
+cd "Caminho\da\Pasta"
+
+* Verifique se a venv está ativa (se entiver aparecendo o nome venv no terminal) caso contrário:
+
+venv\Scripts\activate
+
+* Rode o comando.
+
+panel serve Medico.ipynb --show
+
+Nota: O CRUD será executado e a Interface Gráfica interativa será aberta automaticamente no seu navegador padrão através do servidor local do Panel.
+
