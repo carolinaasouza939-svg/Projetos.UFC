@@ -1,6 +1,7 @@
 __Instruções de Configuração e Execução__
 
-Aplicativos Utilizados
+Aplicativos Utilizados:
+
 PostgreSQL (pgAdmin4): Para execução do script SQL e gerenciamento do banco de dados.
 VS Code com extensão Jupyter: Para desenvolvimento e execução do notebook Medico.ipynb.
 Python 3.13.7: Versão utilizada para garantir compatibilidade com as bibliotecas.
