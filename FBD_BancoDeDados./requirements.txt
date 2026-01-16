@@ -1,0 +1,8 @@
+os
+panel
+hvplot
+holoviews
+sqlalchemy
+psycopg2-binary 
+pandas
+python-dotenv
